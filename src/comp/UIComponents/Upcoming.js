@@ -20,7 +20,7 @@ const Upcoming = () => {
       .unix(time)
       .add(+5.5, "h")
       .utc();
-    return moment(t).format("MM/DD/YYYY");
+    return moment(t).format("MM/DD/YYYY HH:mm");
   };
 
   const onshow = () => {
