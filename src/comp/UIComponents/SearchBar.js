@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "../../style/searchbar.css";
 import { AiOutlineSearch } from "react-icons/ai";
+import Quotes from "../context/quotes";
 
 const SearchBar = () => {
   const [search, setSearch] = useState("");
+  const quote = Quotes();
   const handleSearch = (e) => {
     setSearch(e.target.value);
   };
@@ -15,15 +17,14 @@ const SearchBar = () => {
       search +
       "&ie=utf-8&oe=utf-8 + props.location.state.search";
   };
+  console.log("quoye:-", quote);
 
   return (
-    <div className="container row text-center main">
-      <div className="col-6 mx-auto searchbar h-100">
+    <div className="container row text-center main mt-5">
+      <div className="col-12 mx-auto searchbar">
         <form className="row" onSubmit={handleSubmit}>
-          <h2 className="col-12 mb-5 text-white head">
-            Knowing you're different is only the beginning. ...
-          </h2>
-          <div className="col-12 mt-5">
+          <h1 className="col text-center mb-5 head">{quote}</h1>
+          <div className="col-12 mt-4">
             <input
               autoFocus
               autoComplete="off"

@@ -1,7 +1,9 @@
-import React from "react";
+const Quotes = () => {
+  const quotes = ["Knowing you're different is only the beginning. ..."];
 
-const quotes = () => {
-  return <div></div>;
+  const random = Math.floor(Math.random() * quotes.length);
+
+  return quotes[random];
 };
 
-export default quotes;
+export default Quotes;
