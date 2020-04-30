@@ -4,8 +4,9 @@ import TopNav from "../UIComponents/TopNav";
 import "../../style/searchbar.css";
 import Background from "../context/background";
 import styled from "styled-components";
-import Upcoming from "../UIComponents/Upcoming";
-import Ongoing from "../UIComponents/Ongoing";
+
+import Contests from "../UIComponents/Contests";
+
 
 const Home = () => {
   const bg = Background();
@@ -33,11 +34,8 @@ const Home = () => {
         </div>
         <div className="container-fluid mt-5 pl-5 mx-auto row">
           <div className="col-12 text-center">
-            <Upcoming className="" />
+            <Contests className="" />
           </div>
-          {/* <div className="col-6 text-center">
-            <Ongoing className="" />
-          </div> */}
         </div>
       </Div>
     </>
