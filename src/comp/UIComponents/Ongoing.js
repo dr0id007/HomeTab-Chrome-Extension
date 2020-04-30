@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { fetchOngoingContests } from "../context/fetchContests";
 import moment from "moment";
 import Card from "../UIComponents/Cards";
+import { GoClock } from "react-icons/go";
 
 const Upcoming = () => {
   const [state, setState] = useState([]);
@@ -29,9 +30,12 @@ const Upcoming = () => {
 
   return (
     <div className="container">
-      <div className="">
+      <div className="contest">
         <button className="btn btn-dark" onClick={onShow}>
-          Ongoing Contests
+          <label >
+            <GoClock className="up-icon pt-1" />Ongoing Contests
+          </label>
+          
         </button>
       </div>
       <div className="text-left mt-5 row">

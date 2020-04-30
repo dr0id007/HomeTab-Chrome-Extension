@@ -29,7 +29,7 @@ const Upcoming = () => {
 
   return (
     <div className="container">
-      <div className="">
+      <div className="contest">
         <button onClick={onshow} className="btn btn-dark">
           <label>
             <IoMdTrendingUp className="up-icon pt-1" /> Upcoming Contests

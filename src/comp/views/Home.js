@@ -31,13 +31,13 @@ const Home = () => {
         <div className="container">
           <SearchBar />
         </div>
-        <div className="container-fluid mt-5 ml-5 pl-5 mx-auto row">
-          <div className="col-6 text-center">
+        <div className="container-fluid mt-5 pl-5 mx-auto row">
+          <div className="col-12 text-center">
             <Upcoming className="" />
           </div>
-          <div className="col-6 text-center">
+          {/* <div className="col-6 text-center">
             <Ongoing className="" />
-          </div>
+          </div> */}
         </div>
       </Div>
     </>

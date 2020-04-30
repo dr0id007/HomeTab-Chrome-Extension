@@ -29,7 +29,7 @@ const SearchBar = () => {
               autoFocus
               autoComplete="off"
               className=" form-search"
-              placeholder="search..."
+              placeholder="Search..."
               name="search"
               onChange={handleSearch}
               value={search}
