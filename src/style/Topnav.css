@@ -1,0 +1,16 @@
+.settings-btn,
+.settings-btn:hover,
+.settings-btn:active,
+.settings-btn::selection,
+.settings-btn:focus {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: large;
+}
+
+.popover {
+    width: 500px;
+    height: 80vh;
+    max-width: none;
+}
