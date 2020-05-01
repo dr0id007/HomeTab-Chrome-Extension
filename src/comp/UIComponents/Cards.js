@@ -13,12 +13,12 @@ const Cards = (props) => {
       setLocation(location);
     };
     fetchImg();
-  }, []);
+  }, [props.data.platform]);
   return (
-    <div className="col-3 mb-2">
-      <div className="card shadow round w-100 h-100">
+    <div className="col-2 mb-2">
+      <div className="card mb-3 round w-100 h-100">
         <img className="card-img-top" src={location} alt="Card"></img>
-        <h5 className="card-title mt-2">{props.data.name}</h5>
+        <h6 className="card-title mt-2 ">{props.data.name}</h6>
         <p className="card-text">
           From:- {props.data.startTime} <br />
           To:- {props.data.endTime} <br />

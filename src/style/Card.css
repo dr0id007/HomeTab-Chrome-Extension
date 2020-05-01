@@ -6,11 +6,15 @@
     border-style: solid;
     border-radius: 5px;
     margin: 0px;
-    width: 10vw;
+    width: 5vw;
 
 }
 
 .container {
     padding: 0;
     margin: 20px auto;
+}
+
+.card-img-top {
+    width: 100%;
 }

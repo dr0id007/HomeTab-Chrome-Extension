@@ -9,6 +9,7 @@ import {
   Nav,
 } from "react-bootstrap";
 import { FiSettings } from "react-icons/fi";
+import "../../style/settings.css"
 
 const Settings = () => {
   return (
@@ -18,7 +19,7 @@ const Settings = () => {
       placement="bottom"
       overlay={
         <Popover id={`popover-positioned-bottom`}>
-          <Popover.Title as="h3">Settings</Popover.Title>
+          <Popover.Title as="h3" className="setting-heading">Settings</Popover.Title>
           <Popover.Content>
             {/* <strong>Holy guacamole!</strong> Check this info. */}
             <Tab.Container id="left-tabs-example" defaultActiveKey="first">

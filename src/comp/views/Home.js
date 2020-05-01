@@ -27,6 +27,7 @@ const Home = () => {
 
   return (
     <>
+      <div className="background"></div>
       <Div className="">
         <TopNav />
         <div className="container">

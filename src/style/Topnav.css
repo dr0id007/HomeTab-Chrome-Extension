@@ -5,12 +5,22 @@
 .settings-btn:focus {
     background-color: transparent;
     border: none;
-    color: black;
+    color: white;
     font-size: large;
 }
 
 .popover {
-    width: 500px;
-    height: 80vh;
+    width: 400px;
+    height: 60vh;
     max-width: none;
+    background-color: black;
+}
+
+.fade.show {
+    opacity: 0.9;
+}
+
+.popover-header {
+    background-color: black;
+    opacity: 0.9;
 }

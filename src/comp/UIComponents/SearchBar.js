@@ -23,7 +23,7 @@ const SearchBar = () => {
     <div className="container row text-center main mt-5">
       <div className="col-12 mx-auto searchbar">
         <form className="row" onSubmit={handleSubmit}>
-          <h1 className="col text-center mb-5 head">{quote}</h1>
+          <h1 className="col quote text-center mb-5 head">{quote}</h1>
           <div className="col-12 mt-4">
             <input
               autoFocus

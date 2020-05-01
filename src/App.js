@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./comp/views/Home";
+import "./style/main.css"
 
 const App = () => {
   return (
