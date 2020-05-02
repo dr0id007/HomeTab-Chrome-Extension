@@ -54,8 +54,7 @@ const Contests = () => {
         <div className="contest col-6">
           <button className="btn btn-dark" onClick={onOn}>
             <label>
-              <GoClock className="up-icon pt-1" />
-              Ongoing Contests
+              <GoClock className="up-icon pt-1" /> Ongoing Contests
             </label>
           </button>
         </div>
@@ -75,7 +74,7 @@ const Contests = () => {
                     startTime: Time(data.startTime),
                     endTime: Time(data.endTime),
                     url: data.url,
-                    platform: data.platform
+                    platform: data.platform,
                   }}
                 />
               );
@@ -90,7 +89,7 @@ const Contests = () => {
                     startTime: Time(data.startTime),
                     endTime: Time(data.endTime),
                     url: data.url,
-                    platform: data.platform
+                    platform: data.platform,
                   }}
                 />
               );

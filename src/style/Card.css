@@ -3,7 +3,9 @@
     margin: 0px;
     background-color: #444444;
     color: white;
-    border-color: black;
+    /* border-color: black; */
+    border: none;
+
 }
 
 .container {
@@ -11,7 +13,23 @@
     margin: 20px auto;
 }
 
-.card-img-top {
+.img-card {
     background-color: white;
-    width: 100%;
+}
+
+.card-title {
+    font-weight: 400;
+
+}
+
+.card-time {
+    font-size: 13px;
+    font-weight: 100;
+
+}
+
+.card-platform {
+    margin: 0em;
+    padding: 0%;
+    font-weight: 200;
 }
