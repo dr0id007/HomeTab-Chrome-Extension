@@ -21,7 +21,7 @@ a:hover {
 }
 
 .left-content {
-    border-right: 1px solid #fff;
+    border-right: 0.5px solid #fff;
 }
 
 ul {
@@ -30,20 +30,27 @@ ul {
 }
 
 li {
-    margin: 0;
-    padding: 0;
+    margin-top: 5px;
     display: flex;
     justify-content: right;
+    /* border-bottom: 1px solid white; */
 
 }
 
 .platform-name {
-    font-size: 20px;
+    font-size: 17px;
     margin-right: auto;
     margin-top: 3px;
+
 }
 
 .platform {
-    border-bottom: 2px solid white;
+    /* border-bottom: 2px solid white; */
     text-align: center;
+}
+
+.hr-settings {
+    padding: 0%;
+    margin: 0%;
+    background-color: #aaaaaa;
 }

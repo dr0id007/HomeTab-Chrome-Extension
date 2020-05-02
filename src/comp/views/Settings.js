@@ -6,13 +6,12 @@ import {
   Tab,
   Row,
   Col,
-  Nav
+  Nav,
 } from "react-bootstrap";
 import { FiSettings } from "react-icons/fi";
-import Toggle from "../UIComponents/Toggle"
+import Toggle from "../UIComponents/Toggle";
 
-
-import "../../style/settings.css"
+import "../../style/settings.css";
 
 const Settings = () => {
   return (
@@ -22,7 +21,9 @@ const Settings = () => {
       placement="bottom"
       overlay={
         <Popover id={`popover-positioned-bottom`}>
-          <Popover.Title as="h3" className="setting-heading">Settings</Popover.Title>
+          <Popover.Title as="h3" className="setting-heading">
+            Settings
+          </Popover.Title>
           <Popover.Content>
             {/* <strong>Holy guacamole!</strong> Check this info. */}
             <Tab.Container id="left-tabs-example" defaultActiveKey="first">
@@ -30,28 +31,46 @@ const Settings = () => {
                 <Col sm={3} className="left-content">
                   <Nav variant="pills" className="flex-column">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Platforms</Nav.Link>
+                      <Nav.Link eventKey="platform">Platforms</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">TimeZone</Nav.Link>
+                      <Nav.Link eventKey="timezone">TimeZone</Nav.Link>
                     </Nav.Item>
                   </Nav>
                 </Col>
                 <Col sm={9}>
                   <Tab.Content>
-                    <Tab.Pane eventKey="first">
+                    <Tab.Pane eventKey="platform">
                       <ul>
-                        <h4 className="platform">Available Platforms </h4> <hr/>
-                        <li><h5 className="platform-name">Hackerearth</h5> <Toggle/>
+                        <h4 className="platform">Available Platforms </h4>
+                        <hr />
+                        <li>
+                          <p className="platform-name">Hackerearth</p>
+                          <Toggle />
                         </li>
-                        <li><h5 className="platform-name">Codechef</h5><Toggle/></li>
-                        <li><h5 className="platform-name">Codeforces</h5><Toggle/></li>
-                        <li><h5 className="platform-name">Hackerrank</h5><Toggle/></li>
-                        <li><h5 className="platform-name">Topcoder</h5><Toggle/></li>
-                        
+                        <hr className="hr-settings" />
+                        <li>
+                          <p className="platform-name">Codechef</p>
+                          <Toggle />
+                        </li>
+                        <hr className="hr-settings" />
+                        <li>
+                          <p className="platform-name">Codeforces</p>
+                          <Toggle />
+                        </li>
+                        <hr className="hr-settings" />
+                        <li>
+                          <p className="platform-name">Hackerrank</p>
+                          <Toggle />
+                        </li>
+                        <hr className="hr-settings" />
+                        <li>
+                          <p className="platform-name">Topcoder</p>
+                          <Toggle />
+                        </li>
                       </ul>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="second">second</Tab.Pane>
+                    <Tab.Pane eventKey="timezone">timezone settings</Tab.Pane>
                   </Tab.Content>
                 </Col>
               </Row>
