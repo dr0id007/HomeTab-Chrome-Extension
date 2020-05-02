@@ -1,3 +1,37 @@
 .setting-heading {
     color: white;
 }
+
+a {
+    color: #aaaaaa;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.popover-body {
+    color: white;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: transparent !important;
+    color: #ffffff;
+}
+
+.left-content {
+    border-right: 2px solid #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+li {
+    font-size: 5px;
+    margin: 0;
+    padding: 0;
+
+}
