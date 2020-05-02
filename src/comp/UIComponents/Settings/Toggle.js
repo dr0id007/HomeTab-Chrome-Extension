@@ -12,6 +12,7 @@ const Toggle = (props) => {
 
   const handleChange = (e) => {
     localStorage.setItem(props.platform, e.target.checked);
+    window.location.reload();
   }
 
   const check = localStorage.getItem(props.platform) === "true" ? true : false;
