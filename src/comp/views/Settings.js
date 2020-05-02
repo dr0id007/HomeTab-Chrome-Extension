@@ -41,6 +41,7 @@ const Settings = () => {
                   <Tab.Content>
                     <Tab.Pane eventKey="first">
                       <ul>
+                        <h4 className="platform">Available Platforms </h4> <hr/>
                         <li><h5 className="platform-name">Hackerearth</h5> <Toggle/>
                         </li>
                         <li><h5 className="platform-name">Codechef</h5><Toggle/></li>

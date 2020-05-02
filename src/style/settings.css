@@ -21,7 +21,7 @@ a:hover {
 }
 
 .left-content {
-    border-right: 2px solid #333;
+    border-right: 1px solid #fff;
 }
 
 ul {
@@ -40,4 +40,10 @@ li {
 .platform-name {
     font-size: 20px;
     margin-right: auto;
+    margin-top: 3px;
+}
+
+.platform {
+    border-bottom: 2px solid white;
+    text-align: center;
 }
