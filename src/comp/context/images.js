@@ -1,5 +1,4 @@
 const images = (props) => {
-  console.log("platform", props);
   const image = [
     {
       name: "codechef",
@@ -33,17 +32,12 @@ const images = (props) => {
 
   const loc = image.filter((data) => {
     return data.name === props;
-  })[0]
-  if(loc) {
-    console.log(loc);
+  })[0];
+  if (loc) {
     return loc.url;
   } else {
     return "https://dash-bootstrap-components.opensource.faculty.ai/static/images/placeholder286x180.png";
   }
-  
-  
-  
-
 };
 
 export default images;

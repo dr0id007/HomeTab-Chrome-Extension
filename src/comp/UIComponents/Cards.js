@@ -9,7 +9,7 @@ const Cards = (props) => {
 
   useEffect(() => {
     const location = Images(props.data.platform);
-    console.log("loc:-", location);
+    // console.log("loc:-", location);
     setLocation(location);
   }, [props]);
   return (

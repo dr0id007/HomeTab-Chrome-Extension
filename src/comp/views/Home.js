@@ -7,10 +7,8 @@ import styled from "styled-components";
 
 import Contests from "../UIComponents/Contests";
 
-
 const Home = () => {
   const bg = Background();
-  console.log("rand:-", bg);
 
   const Div = styled.div`
     // background-image: url(${bg});

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import {
   fetchUpcomingContests,
   fetchOngoingContests,
@@ -7,41 +7,48 @@ import moment from "moment";
 import { IoMdTrendingUp } from "react-icons/io";
 import Card from "../UIComponents/Cards";
 import { GoClock } from "react-icons/go";
+import SiteContext from "../context/SitesContext";
 
 const Contests = () => {
   const [show, setShow] = useState("0");
   const [stateUp, setStateUp] = useState([]);
   const [stateOn, setStateOn] = useState([]);
+  const { state } = useContext(SiteContext);
+  const [siteNo] = useState({
+    codechef: 0,
+    codeforces: 1,
+    hackerrank: 2,
+    hackerearth: 3,
+    topcoder: 4,
+  });
+
   useEffect(() => {
     const fet = async () => {
       const res = await fetchUpcomingContests();
+
+      //filter by state.value
+
       const res1 = res.filter((data) => {
-        if(localStorage.getItem(data.platform) === "true") {
-          console.log("yes",data.platform);
-          return true;
-        } else {
-          console.log("no", data.platform);
-          return false;
-        }
+        const no = siteNo[data.platform];
+        return state[no].value === true ? true : false;
       });
       setStateUp(res1);
     };
+
     fet();
+
     const fet2 = async () => {
       const res = await fetchOngoingContests();
+
       const res1 = res.filter((data) => {
-        if(localStorage.getItem(data.platform) === "true") {
-          console.log("yes",data.platform);
-          return true;
-        } else {
-          console.log("no", data.platform);
-          return false;
-        }
+        const no = siteNo[data.platform];
+        return state[no].value === true ? true : false;
       });
+
       setStateOn(res1);
     };
     fet2();
-  }, []);
+  }, [state, siteNo]);
 
   const Time = (time) => {
     const t = moment
@@ -83,7 +90,6 @@ const Contests = () => {
           ? ""
           : show === "1"
           ? stateUp.map((data, index) => {
-              
               return (
                 <Card
                   key={index}
@@ -98,7 +104,6 @@ const Contests = () => {
               );
             })
           : stateOn.map((data, index) => {
-              
               return (
                 <Card
                   key={index}

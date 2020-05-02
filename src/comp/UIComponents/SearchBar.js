@@ -17,7 +17,6 @@ const SearchBar = () => {
       search +
       "&ie=utf-8&oe=utf-8 + props.location.state.search";
   };
-  console.log("quoye:-", quote);
 
   return (
     <div className="container row text-center main mt-5">

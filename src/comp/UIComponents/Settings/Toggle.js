@@ -1,26 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../../style/toggle.css";
 
 const Toggle = (props) => {
-  // const [platforms, setPlatform] = useState({'hackerearth' : false,
-  //                                             'codechef' : true,
-  //                                             'topcode' : true,
-  //                                             'codeforces' : false,
-  //                                             'hackerrank' : false
-  //                                  });
-
-
   const handleChange = (e) => {
-    localStorage.setItem(props.platform, e.target.checked);
-    window.location.reload();
-  }
-
-  const check = localStorage.getItem(props.platform) === "true" ? true : false;
+    props.dispatch({
+      type: "TOGGLE_SITE",
+      value: { name: props.platform, value: !props.value },
+    });
+  };
 
   return (
     <>
       <label className="switch">
-        <input type="checkbox" id="togBtn" defaultChecked={check} onChange={handleChange}/>
+        <input
+          type="checkbox"
+          id="togBtn"
+          checked={props.value}
+          value={props.value}
+          onChange={handleChange}
+        />
         <div className="slider round"></div>
       </label>
     </>
