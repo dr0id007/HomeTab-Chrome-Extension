@@ -9,7 +9,7 @@ import {
   Nav,
 } from "react-bootstrap";
 import { FiSettings } from "react-icons/fi";
-import Toggle from "../UIComponents/Toggle";
+import Platform from "../UIComponents/Settings/Platform";
 
 import "../../style/settings.css";
 
@@ -22,55 +22,46 @@ const Settings = () => {
       overlay={
         <Popover id={`popover-positioned-bottom`}>
           <Popover.Title as="h3" className="setting-heading">
-            Settings
+            <h4 className="ml-2 mt-1">Settings</h4>
           </Popover.Title>
           <Popover.Content>
             {/* <strong>Holy guacamole!</strong> Check this info. */}
             <Tab.Container id="left-tabs-example" defaultActiveKey="first">
               <Row>
-                <Col sm={3} className="left-content">
+                <Col sm={5} className="left-content">
                   <Nav variant="pills" className="flex-column">
                     <Nav.Item>
-                      <Nav.Link eventKey="platform">Platforms</Nav.Link>
+                      <Nav.Link eventKey="platform">
+                        <h6>Platforms</h6>
+                      </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="timezone">TimeZone</Nav.Link>
+                      <Nav.Link eventKey="timezone">
+                        <h6>TimeZone</h6>
+                      </Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="quotes">
+                        <h6>Quotes</h6>
+                      </Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="background">
+                        <h6>Background</h6>
+                      </Nav.Link>
                     </Nav.Item>
                   </Nav>
                 </Col>
-                <Col sm={9}>
+                <Col sm={7}>
                   <Tab.Content>
                     <Tab.Pane eventKey="platform">
-                      <ul>
-                        <h4 className="platform">Available Platforms </h4>
-                        <hr />
-                        <li>
-                          <p className="platform-name">Hackerearth</p>
-                          <Toggle />
-                        </li>
-                        <hr className="hr-settings" />
-                        <li>
-                          <p className="platform-name">Codechef</p>
-                          <Toggle />
-                        </li>
-                        <hr className="hr-settings" />
-                        <li>
-                          <p className="platform-name">Codeforces</p>
-                          <Toggle />
-                        </li>
-                        <hr className="hr-settings" />
-                        <li>
-                          <p className="platform-name">Hackerrank</p>
-                          <Toggle />
-                        </li>
-                        <hr className="hr-settings" />
-                        <li>
-                          <p className="platform-name">Topcoder</p>
-                          <Toggle />
-                        </li>
-                      </ul>
+                      <Platform />
                     </Tab.Pane>
                     <Tab.Pane eventKey="timezone">timezone settings</Tab.Pane>
+                    <Tab.Pane eventKey="quotes">Quotes settings</Tab.Pane>
+                    <Tab.Pane eventKey="background">
+                      background settings
+                    </Tab.Pane>
                   </Tab.Content>
                 </Col>
               </Row>
