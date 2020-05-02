@@ -16,12 +16,14 @@ const Contests = () => {
     const fet = async () => {
       const res = await fetchUpcomingContests();
       const res1 = res.filter((data) => {
-        if(localStorage.getItem(data.platform) === "true") {
+        if(localStorage.getItem(data.platform) &&  localStorage.getItem(data.platform) === "true") {
           console.log("yes",data.platform);
           return true;
-        } else {
+        } else if(localStorage.getItem(data.platform) && localStorage.getItem(data.platform) === "false") {
           console.log("no", data.platform);
           return false;
+        } else {
+          return true;
         }
       });
       setStateUp(res1);
@@ -30,12 +32,14 @@ const Contests = () => {
     const fet2 = async () => {
       const res = await fetchOngoingContests();
       const res1 = res.filter((data) => {
-        if(localStorage.getItem(data.platform) === "true") {
+        if(localStorage.getItem(data.platform) &&  localStorage.getItem(data.platform) === "true") {
           console.log("yes",data.platform);
           return true;
-        } else {
+        } else if(localStorage.getItem(data.platform) && localStorage.getItem(data.platform) === "false") {
           console.log("no", data.platform);
           return false;
+        } else {
+          return true;
         }
       });
       setStateOn(res1);
