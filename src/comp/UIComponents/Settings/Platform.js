@@ -8,27 +8,27 @@ const Platform = () => {
       <hr />
       <li>
         <p className="platform-name">Hackerearth</p>
-        <Toggle />
+        <Toggle platform="hackerearth"/>
       </li>
       <hr className="hr-settings" />
       <li>
         <p className="platform-name">Codechef</p>
-        <Toggle />
+        <Toggle platform="codechef"/>
       </li>
       <hr className="hr-settings" />
       <li>
         <p className="platform-name">Codeforces</p>
-        <Toggle />
+        <Toggle platform="codeforces"/>
       </li>
       <hr className="hr-settings" />
       <li>
         <p className="platform-name">Hackerrank</p>
-        <Toggle />
+        <Toggle platform="hackerrank"/>
       </li>
       <hr className="hr-settings" />
       <li>
         <p className="platform-name">Topcoder</p>
-        <Toggle />
+        <Toggle platform="topcoder"/>
       </li>
     </ul>
   );

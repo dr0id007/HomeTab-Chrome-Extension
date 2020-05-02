@@ -15,12 +15,30 @@ const Contests = () => {
   useEffect(() => {
     const fet = async () => {
       const res = await fetchUpcomingContests();
-      setStateUp(res);
+      const res1 = res.filter((data) => {
+        if(localStorage.getItem(data.platform) === "true") {
+          console.log("yes",data.platform);
+          return true;
+        } else {
+          console.log("no", data.platform);
+          return false;
+        }
+      });
+      setStateUp(res1);
     };
     fet();
     const fet2 = async () => {
       const res = await fetchOngoingContests();
-      setStateOn(res);
+      const res1 = res.filter((data) => {
+        if(localStorage.getItem(data.platform) === "true") {
+          console.log("yes",data.platform);
+          return true;
+        } else {
+          console.log("no", data.platform);
+          return false;
+        }
+      });
+      setStateOn(res1);
     };
     fet2();
   }, []);
@@ -65,7 +83,7 @@ const Contests = () => {
           ? ""
           : show === "1"
           ? stateUp.map((data, index) => {
-              console.log("data:-", data);
+              
               return (
                 <Card
                   key={index}
@@ -80,7 +98,7 @@ const Contests = () => {
               );
             })
           : stateOn.map((data, index) => {
-              console.log("data:-", data);
+              
               return (
                 <Card
                   key={index}
