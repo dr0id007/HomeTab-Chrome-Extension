@@ -4,11 +4,11 @@ import "../../style/toggle.css"
 const Toggle = () => {
     return (
         <>
-            <label class="switch">
+            <label className="switch">
                 <input type="checkbox" id="togBtn"/>
-                <div class="slider round">
-                    <span class="on">ON</span>
-                    <span class="off">OFF</span>
+                <div className="slider round">
+                    <span className="on">ON</span>
+                    <span className="off">OFF</span>
                 </div>
             </label>
 

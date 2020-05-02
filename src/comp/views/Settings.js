@@ -47,6 +47,7 @@ const Settings = () => {
                         <li><h5 className="platform-name">Codeforces</h5><Toggle/></li>
                         <li><h5 className="platform-name">Hackerrank</h5><Toggle/></li>
                         <li><h5 className="platform-name">Topcoder</h5><Toggle/></li>
+                        
                       </ul>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">second</Tab.Pane>
