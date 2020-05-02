@@ -75,7 +75,7 @@ const Contests = () => {
                     startTime: Time(data.startTime),
                     endTime: Time(data.endTime),
                     url: data.url,
-                    platform: data.platform,
+                    platform: data.platform
                   }}
                 />
               );
@@ -90,6 +90,7 @@ const Contests = () => {
                     startTime: Time(data.startTime),
                     endTime: Time(data.endTime),
                     url: data.url,
+                    platform: data.platform
                   }}
                 />
               );

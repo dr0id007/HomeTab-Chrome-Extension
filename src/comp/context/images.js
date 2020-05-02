@@ -31,9 +31,19 @@ const images = (props) => {
     },
   ];
 
-  return image.filter((data) => {
+  const loc = image.filter((data) => {
     return data.name === props;
-  })[0].url;
+  })[0]
+  if(loc) {
+    console.log(loc);
+    return loc.url;
+  } else {
+    return "https://dash-bootstrap-components.opensource.faculty.ai/static/images/placeholder286x180.png";
+  }
+  
+  
+  
+
 };
 
 export default images;

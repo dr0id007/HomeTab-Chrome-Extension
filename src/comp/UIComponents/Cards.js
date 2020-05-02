@@ -7,13 +7,10 @@ const Cards = (props) => {
   const [location, setLocation] = useState("../../assets/icon32.png");
 
   useEffect(() => {
-    const fetchImg = async () => {
-      const location = await Images(props.data.platform);
-      console.log("loc:-", location);
-      setLocation(location);
-    };
-    fetchImg();
-  }, [props.data.platform]);
+    const location = Images(props.data.platform);
+    console.log("loc:-", location);
+    setLocation(location);
+  }, [props]);
   return (
     <div className="col-2 mb-2">
       <div className="card mb-3 round w-100 h-100">
