@@ -13,7 +13,7 @@
     width: 470px;
     height: 60vh;
     max-width: none;
-    background-color: #222222;
+    background-color: #121212;
 }
 
 .fade.show {
@@ -21,6 +21,6 @@
 }
 
 .popover-header {
-    background-color: #222222;
+    background-color: #121212;
     opacity: 0.9;
 }
