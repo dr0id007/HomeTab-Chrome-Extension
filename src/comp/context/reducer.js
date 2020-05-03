@@ -8,6 +8,7 @@ const siteReducer = (state, action) => {
       const newState = state.map((data) => {
         if (data.name === action.value.name) {
           data.value = action.value.value;
+          localStorage.setItem(data.name, data.value);
         }
         return data;
       });

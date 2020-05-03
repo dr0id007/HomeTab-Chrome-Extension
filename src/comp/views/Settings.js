@@ -10,8 +10,10 @@ import {
 } from "react-bootstrap";
 import { FiSettings } from "react-icons/fi";
 import Platform from "../UIComponents/Settings/Platform";
+import Background from "../UIComponents/Settings/Background"
 
 import "../../style/settings.css";
+
 
 const Settings = () => {
   return (
@@ -60,7 +62,7 @@ const Settings = () => {
                     <Tab.Pane eventKey="timezone">timezone settings</Tab.Pane>
                     <Tab.Pane eventKey="quotes">Quotes settings</Tab.Pane>
                     <Tab.Pane eventKey="background">
-                      background settings
+                      <Background />
                     </Tab.Pane>
                   </Tab.Content>
                 </Col>

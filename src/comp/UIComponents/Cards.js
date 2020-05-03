@@ -13,7 +13,7 @@ const Cards = (props) => {
     setLocation(location);
   }, [props]);
   return (
-    <div className="col-6 mb-2 card">
+    <div className="col-6 mb-2 card data" id="card">
       <div className="mb-3 round row">
         <Image
           className="img-card mt-3"

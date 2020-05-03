@@ -1,4 +1,4 @@
-import React from "react";
+import React , { useEffect }from "react";
 import SearchBar from "../UIComponents/SearchBar";
 import TopNav from "../UIComponents/TopNav";
 import "../../style/searchbar.css";
@@ -9,6 +9,12 @@ import Contests from "../UIComponents/Contests";
 
 const Home = () => {
   const bg = Background();
+
+  useEffect(() => {
+    localStorage.getItem("bgColor") ? 
+    document.body.style.backgroundColor = localStorage.getItem("bgColor") :
+    document.body.style.backgroundColor = "#212529";
+  }, []);
 
   const Div = styled.div`
     // background-image: url(${bg});

@@ -1,4 +1,4 @@
-import React, { useReducer, useEffect } from "react";
+import React, { useReducer } from "react";
 import SiteReducer from "./reducer";
 
 const SitesContext = React.createContext(true);
