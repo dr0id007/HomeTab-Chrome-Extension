@@ -20,6 +20,8 @@ const Contests = () => {
     hackerrank: 2,
     hackerearth: 3,
     topcoder: 4,
+    leetcode: 5,
+    kaggle: 6
   });
 
   useEffect(() => {

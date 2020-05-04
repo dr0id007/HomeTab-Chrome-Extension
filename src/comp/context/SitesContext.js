@@ -24,6 +24,14 @@ const initialState = [
     name: "topcoder",
     value: localStorage.getItem("topcoder") === "false" ? false : true,
   },
+  {
+    name: "leetcode",
+    value: localStorage.getItem("topcoder") === "false" ? false : true,
+  },
+  {
+    name: "kaggle",
+    value: localStorage.getItem("kaggle") === "false" ? false : true,
+  }
 ];
 
 export const SitesProvider = (props) => {
