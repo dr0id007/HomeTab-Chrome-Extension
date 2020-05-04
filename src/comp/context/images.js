@@ -28,6 +28,16 @@ const images = (props) => {
       location: "../../assets/topcoder.webp",
       url: "https://avatars3.githubusercontent.com/u/4291571?s=280&v=4",
     },
+    {
+      name: "kaggle",
+      location: "../../assets/kaggle.png",
+      url: "https://www.evolveai.co.uk/uploads/images/905a26b8e3dafd4f9c9a64a41acbfdf3.png",
+    },
+    {
+      name: "leetcode",
+      location: "../../assets/leetcode.jpg",
+      url: "https://www.amadercart.com/wp-content/uploads/2019/10/LeetCode.jpg",
+    }
   ];
 
   const loc = image.filter((data) => {
