@@ -3,10 +3,7 @@ import "../../../style/toggle.css";
 
 const Toggle = (props) => {
   const handleChange = (e) => {
-    props.dispatch({
-      type: "TOGGLE_SITE",
-      value: { name: props.platform, value: !props.value },
-    });
+    props.toggle_site(props.platform, !props.value);
   };
 
   return (

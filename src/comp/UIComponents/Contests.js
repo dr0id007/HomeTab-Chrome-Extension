@@ -21,7 +21,7 @@ const Contests = () => {
     hackerearth: 3,
     topcoder: 4,
     leetcode: 5,
-    kaggle: 6
+    kaggle: 6,
   });
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const Contests = () => {
 
       const res1 = res.filter((data) => {
         const no = siteNo[data.platform];
-        return state[no].value === true ? true : false;
+        return state.sites[no].value === true ? true : false;
       });
       setStateUp(res1);
     };
@@ -44,7 +44,7 @@ const Contests = () => {
 
       const res1 = res.filter((data) => {
         const no = siteNo[data.platform];
-        return state[no].value === true ? true : false;
+        return state.sites[no].value === true ? true : false;
       });
 
       setStateOn(res1);

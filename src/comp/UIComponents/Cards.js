@@ -13,8 +13,8 @@ const Cards = (props) => {
     setLocation(location);
   }, [props]);
   return (
-    <div className="col-6 mb-2 card data" id="card">
-      <div className="mb-3 round row">
+    <div className="col-5 mb-2 card data mr-5 ml-5" id="card">
+      <div className="ml-1 mr-2 mb-3 round row">
         <Image
           className="img-card mt-3"
           src={location}

@@ -10,10 +10,9 @@ import {
 } from "react-bootstrap";
 import { FiSettings } from "react-icons/fi";
 import Platform from "../UIComponents/Settings/Platform";
-import Background from "../UIComponents/Settings/Background"
+import Background from "../UIComponents/Settings/Background";
 
 import "../../style/settings.css";
-
 
 const Settings = () => {
   return (
@@ -24,7 +23,7 @@ const Settings = () => {
       overlay={
         <Popover id={`popover-positioned-bottom`}>
           <Popover.Title as="h3" className="setting-heading">
-            <h4 className="ml-2 mt-1">Settings</h4>
+            <div className="ml-2 mt-2 mb-1">Settings</div>
           </Popover.Title>
           <Popover.Content>
             {/* <strong>Holy guacamole!</strong> Check this info. */}

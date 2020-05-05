@@ -3,13 +3,13 @@ import Toggle from "./Toggle";
 import SitesContext from "../../context/SitesContext";
 
 const Platform = () => {
-  const { state, dispatch } = useContext(SitesContext);
+  const { state, toggle_site } = useContext(SitesContext);
 
   return (
     <ul>
       <h4 className="platform">Available Platforms </h4>
       <hr />
-      {state.map((site, index) => {
+      {state.sites.map((site, index) => {
         return (
           <React.Fragment key={index}>
             <li>
@@ -17,7 +17,7 @@ const Platform = () => {
               <Toggle
                 platform={site.name}
                 value={site.value}
-                dispatch={dispatch}
+                toggle_site={toggle_site}
                 state={state}
               />
             </li>

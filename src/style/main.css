@@ -1,3 +1,26 @@
 body {
     background-color: #212121;
+    background: linear-gradient(to right, #16222a, #3a6073);
+    background: linear-gradient(to bottom, #1d976c, #93f9b9);
+    background: linear-gradient(to bottom, #1d2b64, #f8cdda);
+    background: linear-gradient(to bottom, #314755, #26a0da);
+    background: linear-gradient(to left, #2193b0, #6dd5ed);
+    background: linear-gradient(to top, #bbd2c5, #536976, #292e49);
+    background: linear-gradient(to top, #bdc3c7, #2c3e50);
+    background: linear-gradient(to bottom, #2193b0, #6dd5ed);
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(to top, #232526, #414345);
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+
+
+.vector {
+    position: fixed;
+    bottom: 3px;
+    height: 30%;
+    left: 10%;
+    z-index: -1;
+
 }
