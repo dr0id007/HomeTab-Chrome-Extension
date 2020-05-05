@@ -37,6 +37,9 @@ const initialState = {
   color: {
     background: "linear-gradient(to top, #bdc3c7, #2c3e50",
   },
+  time: {
+    value: "Europe/Moscow",
+  },
 };
 
 export const SitesProvider = (props) => {
@@ -61,8 +64,17 @@ export const SitesProvider = (props) => {
     setState({ ...newState });
   };
 
+  const handleTimezone = (value) => {
+    console.log("val:-", value);
+    const newState = state;
+    newState.time.value = value;
+    setState({ ...newState });
+  };
+
   return (
-    <SitesContext.Provider value={{ state, toggle_site, handleBackground }}>
+    <SitesContext.Provider
+      value={{ state, toggle_site, handleBackground, handleTimezone }}
+    >
       {props.children}
     </SitesContext.Provider>
   );

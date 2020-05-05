@@ -11,6 +11,7 @@ import {
 import { FiSettings } from "react-icons/fi";
 import Platform from "../UIComponents/Settings/Platform";
 import Background from "../UIComponents/Settings/Background";
+import TimeZone from "../UIComponents/Settings/Timezone";
 
 import "../../style/settings.css";
 
@@ -58,7 +59,9 @@ const Settings = () => {
                     <Tab.Pane eventKey="platform">
                       <Platform />
                     </Tab.Pane>
-                    <Tab.Pane eventKey="timezone">timezone settings</Tab.Pane>
+                    <Tab.Pane eventKey="timezone">
+                      <TimeZone />
+                    </Tab.Pane>
                     <Tab.Pane eventKey="quotes">Quotes settings</Tab.Pane>
                     <Tab.Pane eventKey="background">
                       <Background />

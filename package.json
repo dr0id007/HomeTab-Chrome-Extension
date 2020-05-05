@@ -11,6 +11,7 @@
 		"moment": "^2.24.0",
 		"react": "^16.13.1",
 		"react-bootstrap": "^1.0.1",
+		"react-bootstrap-timezone-picker": "^2.0.1",
 		"react-color": "^2.18.0",
 		"react-dom": "^16.13.1",
 		"react-helmet": "^6.0.0",
